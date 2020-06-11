@@ -43,14 +43,14 @@ public class TrianguloTest {
 		TipoTriangulo esperado = triangulo.TipoTriangulo.NotATriangle;
         assertEquals(esperado, resultado);	
 	}
-	//@Test
+	@Test
 	/*caso con 3 enteros mayores que 0 tal que la suma de 2 es igual
 	a la del 3 (esto no es un triángulo válido)*/
-	/*public void TrianguloNoValido() {
+	public void TrianguloNoValido() {
 		TipoTriangulo resultado = triangulo.Triangulo.classify(2,1,3);
 		TipoTriangulo esperado = triangulo.TipoTriangulo.NotATriangle;
         assertEquals(esperado, resultado);	
-	}*/
+	}
 	@Test
 	//Caso con valores que no sean enteros
 	public void TrianguloNoValido2() {

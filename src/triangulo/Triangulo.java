@@ -33,13 +33,21 @@ public class Triangulo {
         System.out.println ("Por favor introduzca c: ");       
         entradaEscaner = new Scanner (System.in); //Creaci√≥n de un objeto Scanner
         c = entradaEscaner.nextInt();
-        
+             
+        if (a < 1 || a > 200) {
+        	System.out.println ("El valor de a no est· en el rango de valores permitidos"); 
+        }else if(b < 1 || b > 200) {
+        	System.out.println ("El valor de b no est· en el rango de valores permitidos"); 
 
-        System.out.println ("a = "+ a);
-        System.out.println ("b = "+ b);
-        System.out.println ("c = "+ c);
-        
-        classify(a,b,c);
+        }else if(c < 1 || c > 200) {
+        	System.out.println ("El valor de c no est· en el rango de valores permitidos"); 
+
+        }else {
+        	  System.out.println ("a = "+ a);
+              System.out.println ("b = "+ b);
+              System.out.println ("c = "+ c);
+            classify(a,b,c);
+        }
         
     }
     
@@ -60,7 +68,7 @@ public class Triangulo {
           trian = trian + 3;
         }
         if (trian == 0) {
-          if (((a + b) < c) || ((a + c) < b) || ((b + c) < a)) {
+          if (((a + b) <= c) || ((a + c) <= b) || ((b + c) <= a)) {
         	  System.out.println ("No es un triangulo");
             return TipoTriangulo.NotATriangle;
           } else {
