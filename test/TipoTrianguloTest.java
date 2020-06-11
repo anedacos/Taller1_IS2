@@ -20,9 +20,9 @@ public class TipoTrianguloTest {
     //
      @Test
      public void testEquilatero() {
-         TipoTriangulo resultado = triangulo.Triangulo.classify(2, 2, 2);
+         TipoTriangulo resultado = triangulo.Triangulo.classify(2, 2, 2); //Prueba a realizar
          TipoTriangulo esperado = triangulo.TipoTriangulo.EQUILATERAL;
-         assertEquals(esperado, resultado);
+         assertEquals(esperado, resultado); //Verifica si los dos coinciden, así la prueba se hizo correctamente
      }
      @Test
      public void testIsoceles() {
