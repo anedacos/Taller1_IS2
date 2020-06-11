@@ -16,9 +16,10 @@ public class Triangulo {
     /**
      * @param args the command line arguments
      */
+	
     public static void main(String[] args) {
         // TODO code application logic here
-        int a, b, c = 0;
+        int a, b, c=0;
         boolean c1, c2, c3, isATriangle;
         
         System.out.println ("Empezamos el programa");
@@ -40,9 +41,6 @@ public class Triangulo {
         
         classify(a,b,c);
         
-        /*do {            
-            
-        } while (isATriangle);*/
     }
     
     public static TipoTriangulo classify(final int a, final int b, final int c) {
@@ -87,5 +85,7 @@ public class Triangulo {
         System.out.println ("No es un triangulo");
         return TipoTriangulo.NotATriangle;
       }
+    
+
     
 }
